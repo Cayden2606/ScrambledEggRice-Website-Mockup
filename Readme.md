@@ -1,5 +1,3 @@
-Here's a `README.md` file for your *Scrambled Egg Rice Website Mockup* project:
-
 ---
 
 # Scrambled Egg Rice Website Mockup 🍳🍚
