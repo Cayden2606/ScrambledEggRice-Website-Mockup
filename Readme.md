@@ -23,9 +23,6 @@ Welcome to my scrambled egg rice mockup website! This project is a front-end sho
 The Scrambled Egg Rice  website mockup replicates a smooth online food ordering experience. It includes user-friendly navigation, product menus, ordering forms, and registration options. This project emphasizes responsive design and clean visuals to deliver a delightful browsing experience.
 
 ---
-Here’s the **image section** for your `README.md`:
-
----
 
 ## Pages Preview
 
