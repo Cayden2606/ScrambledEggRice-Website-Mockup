@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../images/DanLao_logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="index.html" class="logo"><img src="../images/DanLao_logo.svg" alt="DanLao logo"></a></li>
+            <li><a href="menu.html" class="nav-buttons menu curved-corners">Menu</a></li>
+            <li><a href="about-us.html" class="nav-buttons about-us curved-corners">About Us</a></li>
+            <li><a href="sign-in.html" class="nav-buttons sign-in curved-corners">Sign in</a></li>
+            <li><a href="order.html" class="cart"><img src="../images/buy.svg" alt="cart"></a></li>
+        </ul>
+        <div class="hamburger">
+            <div><img src="../images/hamburger.svg" alt="hamburger-menu"></div>
+            <div class="drop-down-btn-content">
+                <a href="menu.html">Menu</a>
+                <a href="about-us.html">About Us</a>
+                <a href="sign-in.html">Sign in</a>      
+                <a href="order.html">Order</a>  
+            </div>
+        </div>
+    </nav>
+    <main>
+        <header>
+            <p class="center">
+                <b>Welcome to DANLAO</b><br>The most EGG-CELLENT scrambled egg rice.
+            </p>
+            <div class="vl"></div>
+            <p class="center">
+                Enjoy up to <b>20%</b> OFF for every 5 Bowls Bought. *<br><span class="small">Limited Time Only</span>
+            </p>
+        </header>
+        <section class="form">
+                <fieldset id="sign-in-fieldset">
+                    <legend><h3>Member Registration</h3></legend>
+                    <div><br>
+                        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    
+                                <div>
+                                    <label>Name: <span class="red">*</span></label><br>
+                                    <div class="signin-name-form">
+                                        <input class="name-input-style name-padding-left border-form" type="text" id="first-name" name="first-name" required placeholder="First Name" pattern="[a-zA-Z]+" title="Enter First Name Here.">
+                                        <input class="name-input-style name-padding-left border-form" type="text" id="last-name" name="last-name" required placeholder="Last Name" pattern="[a-zA-Z]+" title="Enter Last Name Here.">
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label for="user_id">User ID: <span class="red">*</span></label><br>
+                                    <input class="text-input-style name-padding-left border-form" type="text" minlength="5" maxlength="12" pattern="[a-zA-Z0-9]{5,12}" title="User ID has to be 5-12 characters long." id="user_id" name="user_id" required placeholder="Min 5 characters">
+                                </div>
+
+                                <div>
+                                    <label for="password">Password: <span class="red">*</span></label><br>
+                                    <input class="text-input-style name-padding-left border-form" type="password" id="password" name="password" minlength="8" required title="At least 10 characters, 1 uppercase letter, 1 lowercase letter, 1 number and 1 special characters [#@$!%*?&]." pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#@$!%*?&])[A-Za-z\d#@$!%*?&]{10,}$" placeholder="Create a password">
+            
+                                </div>
+
+                                <div>
+                                    <label for="password">Re-enter Password: <span class="red">*</span></label><br>
+                                    <input class="text-input-style name-padding-left border-form" type="password" id="confirm-password" name="confirm-password" minlength="8" required title="At least 10 characters, 1 uppercase letter, 1 lowercase letter, 1 number and 1 special characters [#@$!%*?&]" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#@$!%*?&])[A-Za-z\d#@$!%*?&]{10,}$" placeholder="Re-Enter password">
+            
+                                </div>
+                    
+                                <div>
+                                    <label for="mobile">Phone No.: <span class="red">*</span></label><br>
+                                    <input class="text-input-style name-padding-left border-form" type="tel" id="mobile" name="mobile" pattern="[689]{1}[0-9]{7}" required placeholder="Enter your phone number" title="Enter a Phone Number (Total of 8 digits, starting with 6, 8, or 9).">
+                
+                                </div>
+                          
+                                <div>
+                                    <label for="email">Email Address: <span class="red">*</span></label><br>
+                                    <input class="text-input-style name-padding-left border-form" title="Enter Email Here" type="email" id="email" name="email" required placeholder="Example@example.com">
+                                </div>
+                                <div>
+                                    <label>Date of birth: <span class="red small">(Optional)</span></label><br>
+                                    <input id="date" class="margin-bottom-20px text-input-style border-form-textarea" type="date">
+                                </div>
+                                <div id="gender-container">
+                                    <label>Gender: <span class="red">*</span></label><br>
+                                    <input class="border-form-radio margin-bottom-20px" type="radio" id="male" required name="gender" value="male">
+                                    <label for="male">Male</label>
+                                    <input class="border-form-radio margin-bottom-20px" type="radio" id="female" required name="gender" value="female">
+                                    <label for="female">Female</label>
+                                    <input class="border-form-radio margin-bottom-20px" type="radio" id="other" required name="gender" value="other">
+                                    <label for="other">Others</label>
+                                    <div id="gender-identity">
+                                        <label>Gender Information: <span class="red small">(Optional)</span></label><br>
+                                        <textarea class="text-input-style border-form-textarea" id="gender_info" name="gender_info" placeholder="Enter Your Preferred Pronouns" title="Enter your preferred pronouns: (They/Them etc.)"></textarea><br>
+                                        <label>Preferred Gender Name: <span class="red small">(Optional)</span></label><br>
+                                        <input class="text-input-style name-padding-left border-form" type="text" id="gender-name" name="street_name" placeholder="Enter Preferred Name" title="Enter your Preferred Name"><br>
+                                        <hr><br>
+                                    </div>    
+                                </div>
+                    
+                                <div>
+                                    <label for="address">Address: <span class="red not-so-small">(Optional)</span></label><br>
+                                    <textarea class="text-input-style border-form-textarea" id="address" name="address" placeholder="Enter your address" title="Enter Your Address"></textarea>
+                                </div>
+                    
+                                <div>
+                                    <label for="favorite_food">Favorite Food: <span class="red not-so-small">(Optional)</span></label><br>
+                                    <input class="text-input-style name-padding-left border-form" type="text" id="favorite_food" name="favorite_food" placeholder="What is your favourite food?" title="Enter Your Favourite Food 😋">
+                                </div>
+                                <div class="buttons-form-container">
+                                    <input class="buttons-form border-form buttons-form-animate" type="submit" value="Register">
+                                    <input class="buttons-form border-form buttons-form-animate" type="reset" value="Reset">
+                                </div>
+                                <br>                    
+                        </form>
+                            
+                    </div>
+                </fieldset>
+        </section>
+        <footer>
+            <div class="float-left">
+                <p>Follow us:</p>
+            </div>
+            <div class="float-left">
+                <a href="https://www.facebook.com/p/Danlao-%E8%9B%8B%E4%BD%AC-100088100265555/"><img src="../images/facebook.svg" alt="facebook"></a>
+            </div>
+            <div class="float-left">
+                <a href="https://www.instagram.com/danlao_sg/"><img src="../images/instagram.svg" alt="instagram"></a>
+            </div>
+            <div class="float-right">
+                <p class="copyright">&copy; 2024 DanLao. All Rights Reserved</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
+
+

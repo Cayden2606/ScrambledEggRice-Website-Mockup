@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../images/DanLao_logo.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html" class="logo"><img src="../images/DanLao_logo.svg" alt="DanLao logo"></a></li>
+                <li><a href="menu.html" class="nav-buttons menu curved-corners">Menu</a></li>
+                <li><a href="about-us.html" class="nav-buttons about-us curved-corners">About Us</a></li>
+                <li><a href="sign-in.html" class="nav-buttons sign-in curved-corners">Sign in</a></li>
+                <li><a href="order.html" class="cart"><img src="../images/buy.svg" alt="cart"></a></li>
+            </ul>
+            <div class="hamburger">
+                <div><img src="../images/hamburger.svg" alt="hamburger-menu"></div>
+                <div class="drop-down-btn-content">
+                    <a href="menu.html">Menu</a>
+                    <a href="about-us.html">About Us</a>
+                    <a href="sign-in.html">Sign in</a>      
+                    <a href="order.html">Order</a>  
+                </div>
+            </div>
+        </nav>
+        <header>
+            <p class="center">
+                <b>Welcome to DANLAO</b><br>The most EGG-CELLENT scrambled egg rice.
+            </p>
+            <div class="vl"></div>
+            <p class="center">
+                Enjoy up to <b>20%</b> OFF for every 5 Bowls Bought. *<br><span class="small">Limited Time Only</span>
+            </p>
+        </header>
+        <section class="form">
+            <div id="new-banner">
+                <a href="order.html#order-form"><img src="../images/new-banner1.png" alt="new-promo-banner"></a>
+            </div>   
+            <br>
+            <form method="post" action="https://jkorpela.fi/cgi-bin/echo.cgi">
+                <div id="order-form">
+                    <fieldset>
+                        <legend>Food Selection</legend>
+                        <div>
+                            <label class="form-title"><strong>Food Name: <span class="red">*</span></strong></label>
+                            <select class="border-form" name="food-name" required>
+                                <option value="" selected>Choose One &nbsp;&nbsp;</option>
+                                <option value="TM">Tomato Scrambled Egg Rice &nbsp;&nbsp;</option>
+                                <option value="LM">Luncheon Meat Scrambled Egg Rice &nbsp;&nbsp;</option>
+                                <option value="CC">Chicken Cutlet Scrambled Egg Rice &nbsp;&nbsp;</option>
+                                <option value="CS">Char Siew Scrambled Egg Rice &nbsp;&nbsp;</option>
+                                <option value="EP">EBI Prawn Scrambled Egg Rice &nbsp;&nbsp;</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div>
+                            <label><strong>Quantity: <span class="red">*</span></strong></label>
+                            <input class="border-form" type="number" min="1" max="10" name="quantity" placeholder="1" required>
+                        </div>
+                        <br>
+                        <div>
+                            <label><strong>Additional Ingredients: (Optional)</strong></label><br>
+                            <div>
+                                <div class="choose-ingredients-container">
+                                    <div class="ingredient-item" id="add-egg-image">
+                                        <img src="../images/scrambled-egg.jpg" alt="Scrambled Egg Add-On">
+                                        <input class="border-form-radio position-radio" name="add-ingredients" id="add-egg" type="checkbox" value="Egg">
+                                        <label for="add-egg">Scrambled Egg<br><span>$1.20</span></label>
+                                        <input id="add-egg-quantity" class="border-form quantity-order" type="number" min="1" max="5" name="quantity-add-egg" placeholder="1">
+
+                                    </div>
+                                    <div class="ingredient-item" id="add-chicken-image">
+                                        <img src="../images/chicken-cutlet.jpg" alt="Chicken Cutlet Add-On">
+                                        <input class="border-form-radio position-radio" name="add-ingredients" id="add-chicken" type="checkbox" value="Chicken-Cutlet">
+                                        <label for="add-chicken">Chicken Cutlet<br><span>$2.00</span></label>
+                                        <input id="add-chicken-quantity" class="border-form quantity-order" type="number" min="1" max="5" name="quantity-add-chicken" placeholder="1">
+                                    </div>
+                                    <div class="ingredient-item" id="add-charsiew-image">
+                                        <img src="../images/Charsiew-add.jpg" alt="Char Siew Add-On">
+                                        <input class="border-form-radio position-radio" name="add-ingredients" id="add-charsiew" type="checkbox" value="Char-Siew">
+                                        <label for="add-charsiew">Char Siew<br><span>$2.50</span></label>
+                                        <input id="add-charsiew-quantity" class="border-form quantity-order" type="number" min="1" max="5" name="quantity-add-charsiew" placeholder="1">
+                                    </div>
+                                </div>
+                                <div class="choose-ingredients-container">
+                                    <div class="ingredient-item" id="add-luncheon-image">
+                                        <img src="../images/Luncheon-Meat-Cubes.jpg" alt="Luncheon Meat Add-On">
+                                        <input class="border-form-radio position-radio" name="add-ingredients" id="add-luncheon" type="checkbox" value="luncheon-Meat">
+                                        <label for="add-luncheon">Luncheon Meat<br><span>$2.00</span></label>
+                                        <input id="add-luncheon-quantity" class="border-form quantity-order" type="number" min="1" max="5" name="quantity-add-luncheon" placeholder="1">
+                                    </div>
+                                    <div class="ingredient-item" id="add-prawn-image">
+                                        <img src="../images/EBI-Prawns.jpg" alt="EBI Prawns Add-On">
+                                        <input class="border-form-radio position-radio" name="add-ingredients" id="add-prawn" type="checkbox" value="EBI-Prawn">
+                                        <label for="add-prawn">EBI Prawn (3pcs)<br><span>$3.00</span></label>
+                                        <input id="add-prawn-quantity" class="border-form quantity-order" type="number" min="1" max="5" name="quantity-add-EBI-Prawn" placeholder="1">
+                                    </div>
+                                    <div class="ingredient-item" id="add-rice-image">
+                                        <img src="../images/Rice.jpg" alt="Rice Add-On">
+                                        <input class="border-form-radio position-radio" name="add-ingredients" id="add-rice" type="checkbox" value="Rice">
+                                        <label for="add-rice">Rice<br><span>$1.00</span></label>
+                                        <input id="add-rice-quantity" class="border-form quantity-order" type="number" min="1" max="5" name="quantity-add-rice" placeholder="1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <label><strong>Special Requests: (Optional)</strong></label><br>
+                            <textarea class="border-form-textarea" name="special_requests" rows="3" cols="50" placeholder="Enter Special Request"></textarea>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Payment Information</legend>
+                        <div>
+                            <label><strong>Payment Type: <span class="red">*</span></strong></label><br>
+                            <input class="border-form-radio" type="radio" id="card" required name="payment_type" value="card">
+                            <label for="card">Card</label><br>
+                            <input class="border-form-radio" type="radio" id="paypal" required name="payment_type" value="paypal">
+                            <label for="paypal">Paypal</label><br>
+                            <input class="border-form-radio" type="radio" id="paynow" required name="payment_type" value="paynow">
+                            <label for="paynow">Paynow</label><br>
+                            <input class="border-form-radio" type="radio" id="other_payment" required name="payment_type" value="other-payment">
+                            <label for="other_payment">Others:</label>
+                            <input class="border-form" type="text" id="other_payment_text" name="payment_other">
+                        </div>
+                        <br>
+                        <div>
+                            <label><strong>Promo Code: </strong></label><br>
+                            <p>Code: 
+                            <input class="border-form" type="text" id="promo-code" name="promo-code" maxlength="6"></p>
+                        </div>
+                    </fieldset>
+                </div>
+             
+                
+                
+                <fieldset>
+                    <legend>Order Type</legend>
+                    <label><strong>Delivery Type: <span class="red">*</span></strong></label><br>
+                    <input class="border-form-radio" type="radio" id="delivery" required name="order_type" value="delivery">
+                    <label for="delivery">Delivery</label><br>
+                    <input class="border-form-radio" type="radio" id="store_pickup" required name="order_type" value="store_pickup">
+                    <label for="store_pickup">Store Pickup</label><br><br>
+                    
+                    <div id="address_fields"> <!--Cannot put these as "required" as it would not allow user to 'Place Order' without filling in Address Information, even if user selects Store Pickup. :( -->
+                        <h3>Address Information:</h3>
+                        <label for="block_number">Block/House Number:</label><br>
+                        <input class="border-form" type="text"  id="block_number" value="" name="block_number"><br>
+                        
+                        <label for="street_name">Street Name:</label><br>
+                        <input class="border-form" type="text"  id="street_name" value="" name="street_name"><br>
+                        
+                        <label for="unit_number">Floor/Unit Number:</label><br>
+                        <input class="border-form" type="text"  id="unit_number" value="" name="unit_number"><br>
+                        
+                        <label for="postal_code">Postal Code:</label><br>
+                        <input class="border-form" type="text"  id="postal_code" value="" name="postal_code"><br>
+                    </div>
+                    <br>
+                    <strong>Additional Instructions for Delivery/Pickup: (Optional)</strong><br>
+                    <textarea placeholder="Enter Addtional Instructions" class="border-form-textarea" id="delivery_instructions" name="delivery_instructions" rows="4" cols="50"></textarea><br>
+                </fieldset>
+                
+                <div class="buttons-form-container" id="order-buttons">
+                    <input class="buttons-form border-form" type="submit" value="Place Order">
+                    <input class="buttons-form border-form" type="reset" value="Reset">
+                </div>
+
+            </form>
+        </section>
+        <footer>
+            <div class="float-left">
+                <p>Follow us:</p>
+            </div>
+            <div class="float-left">
+                <a href="https://www.facebook.com/p/Danlao-%E8%9B%8B%E4%BD%AC-100088100265555/"><img src="../images/facebook.svg" alt="facebook"></a>
+            </div>
+            <div class="float-left">
+                <a href="https://www.instagram.com/danlao_sg/"><img src="../images/instagram.svg" alt="instagram"></a>
+            </div>
+            <div class="float-right">
+                <p class="copyright">&copy; 2024 DanLao. All Rights Reserved</p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
