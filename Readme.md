@@ -3,7 +3,7 @@
 # Scrambled Egg Rice Website Mockup 🍳🍚
 
 Welcome to my scrambled egg rice mockup website! This project is a front-end showcase for a modern and user-friendly online food ordering platform, highlighting our signature Hong Kong-style scrambled egg rice bowls.
-
+https://cayden2606.github.io/ScrambledEggRice-Website-Mockup/index.html
 
 ## Table of Contents
 - [Overview](#overview)
