@@ -12,7 +12,7 @@ main::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../images/background-image.jpg);
+    background-image: url(images/background-image.jpg);
     background-size: 250px;
     z-index: -1;
     opacity: 0.4;
@@ -174,7 +174,7 @@ section {
     padding-top: 10px;
 }
 .images-title {
-    /* background-image: url(../images/Danlao-chicken-cutlet-scrambled-egg-rice.jpg);
+    /* background-image: url(images/Danlao-chicken-cutlet-scrambled-egg-rice.jpg);
     background-repeat: no-repeat; */
     width: 100%;
     height: 450px;
@@ -509,7 +509,7 @@ footer {
     font-size: xx-large;
 }
 #promotion-background {
-    background-image: url(../images/background-.png);
+    background-image: url(images/background-.png);
     width: 100%;
     height: 400px;
     background-position: 0% 69%;
@@ -578,7 +578,7 @@ footer {
 .image-overlay {
     background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.8)),
-    url('../images/store-nyp.jpg');
+    url('images/store-nyp.jpg');
     width: 100%;
     height: 600px;
     background-size: cover;
